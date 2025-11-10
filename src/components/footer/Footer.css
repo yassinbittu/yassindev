@@ -1,0 +1,76 @@
+/* ===== FOOTER SECTION ===== */
+.footer {
+  background: #0b0f19;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 10;
+}
+
+/* ===== CONTENT WRAPPER ===== */
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ===== COPYRIGHT TEXT ===== */
+.footer-content p {
+  font-size: 1rem;
+  color: #a0a0a0;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+/* ===== LINKS ===== */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.footer-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #f9b234;
+  transition: width 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #f9b234;
+}
+
+.footer-links a:hover::after {
+  width: 100%;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .footer-content p {
+    font-size: 0.9rem;
+  }
+
+  .footer-links {
+    gap: 15px;
+  }
+
+  .footer-links a {
+    font-size: 0.95rem;
+  }
+}

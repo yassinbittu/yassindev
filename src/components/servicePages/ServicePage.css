@@ -1,0 +1,87 @@
+.service-detail {
+  padding: 100px 20px;
+  color: #ffffff;
+  background-color: #0b0f19;
+  max-width: 900px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.service-detail h1 {
+  color: #ffae00;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.service-detail h3 {
+  color: #ffd580;
+  margin-top: 25px;
+}
+
+.service-detail p {
+  line-height: 1.6;
+  margin: 15px 0;
+  color: #cccccc;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #ffae00;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+/* Categories Cards */
+.categories-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 15px 0;
+}
+
+.category-card {
+  background-color: #1c1f2a; /* dark card background */
+  color: #ffffff;            /* white text */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  flex: 1 1 200px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.5);
+  background-color: #ffae00; /* highlight on hover */
+  color: #0b0f19;           /* text changes to dark */
+}
+
+.category-icon {
+  font-size: 40px;
+  color: blue; /* gold icon color */
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .service-detail {
+    padding: 70px 15px;
+  }
+
+  .service-detail h1 {
+    font-size: 1.8rem;
+  }
+
+  .categories-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

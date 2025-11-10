@@ -1,0 +1,161 @@
+/* ===== THEME COLORS ===== */
+:root {
+  --primary-bg: #0b0f19;         /* Main background */
+  --secondary-bg: #001f3f;       /* Navbar base */
+  --gradient-bg: linear-gradient(90deg, #001f3f, #003366);
+  --accent-color: #f9b234;       /* Gold highlight */
+  --button-bg: #ffcc40;          /* Button background */
+  --text-color: #ffffff;         /* Primary text */
+  --subtext-color: #a0a0a0;      /* Secondary text */
+  --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85px; /* increased height */
+  background: var(--primary-bg);
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px; /* more horizontal padding */
+  box-shadow: 0 5px 12px var(--shadow-color);
+  z-index: 1000;
+  box-sizing: border-box;
+  transition: background 0.3s ease, box-shadow 0.3s ease, height 0.3s ease;
+}
+
+/* ===== LOGO ===== */
+.navbar-logo {
+  font-size: 32px; /* bigger logo text */
+  font-weight: 800;
+  color: var(--accent-color);
+  cursor: pointer;
+  letter-spacing: 1.5px;
+}
+
+.navbar-logo span {
+  color: var(--text-color);
+}
+
+/* ===== LINKS ===== */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 40px; /* wider gap */
+  margin: 0;
+  padding: 0;
+  transition: all 0.4s ease;
+}
+
+.navbar-links li {
+  display: inline-block;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 20px; /* slightly larger font */
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: var(--accent-color);
+  transform: scale(1.08);
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+/* ===== BUTTON ===== */
+.hire-btn {
+  color: var(--text-color);
+  background: var(--button-bg);
+  padding: 12px 24px; /* larger button */
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px; /* larger text */
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 3px 8px var(--shadow-color);
+}
+
+.hire-btn:hover {
+  background: var(--accent-color);
+  transform: scale(1.08);
+}
+
+/* ===== MENU ICON ===== */
+.menu-icon {
+  display: none;
+  font-size: 30px; /* slightly larger */
+  cursor: pointer;
+  color: var(--text-color);
+  transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+  transform: rotate(90deg);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    padding: 0 25px;
+    height: 80px;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: rgba(11, 15, 25, 0.95);
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    transition: height 0.4s ease;
+  }
+
+  .navbar-links.active {
+    height: 300px;
+    padding-top: 20px;
+  }
+
+  .navbar-links a {
+    font-size: 22px;
+  }
+
+  .navbar-action {
+    display: none;
+  }
+
+  .hire-btn {
+    font-size: 20px;
+    padding: 14px 26px;
+  }
+}
