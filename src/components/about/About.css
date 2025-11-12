@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-bg: #0b0f19;
+  --accent-color: #f9b234;
+  --text-color: #ffffff;
+  --subtext-color: #a0a0a0;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about-section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 8%;
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ===== TITLE ===== */
+.about-title {
+  font-size: 2.4rem;
+  color: var(--accent-color);
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.about-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: var(--accent-color);
+  margin: 10px auto 0;
+  border-radius: 3px;
+}
+
+/* ===== TAGLINE ===== */
+.about-tagline {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.about-tagline .desigin{
+    color:#ffffff;
+}
+.about-tagline .develop{
+    color:var(--accent-color);
+}
+.about-tagline .deliver{
+    color:#ff4b4b;
+}
+/* Optional: smooth transition + subtle hover pop */
+.about-tagline span {
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+.about-tagline span:hover {
+  transform: scale(1.1);
+}
+
+/* ===== TEXT ===== */
+.about-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--subtext-color);
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== HOVER EFFECT (optional) ===== */
+.about-text:hover {
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-tagline {
+    font-size: 1.1rem;
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+  }
+}

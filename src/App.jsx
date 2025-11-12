@@ -4,9 +4,11 @@ import Loader from "./components/Loader/Loader";
 import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero";
 import Services from "./components/services/Services";
-import Projects from "./components/projects/Projects";
+// import Projects from "./components/projects/Projects";
+import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+
 
 // ✅ Import service detail pages
 import EcommercePage from "./components/servicePages/EcommercePage";
@@ -32,7 +34,8 @@ function App() {
                 <>
                   <Hero />
                   <Services />
-                  <Projects />
+                  {/* <Projects /> */}
+                  <About />
                   <Contact />
                   <Footer />
                 </>

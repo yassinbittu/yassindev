@@ -25,7 +25,7 @@ const Contact = () => {
       <h2 className="section-title">Contact Me</h2>
       <p className="contact-intro">
         Let’s collaborate! Fill out the form below or reach me directly at{" "}
-        <span>yassin.dev@gmail.com</span>
+        <span>yxn.dev1@gmail.com</span>
       </p>
 
       {/* ✅ Contact Buttons */}
