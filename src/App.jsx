@@ -10,7 +10,7 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 
 
-// ✅ Import service detail pages
+//  Import service detail pages
 import EcommercePage from "./components/servicePages/EcommercePage";
 import BusinessPage from "./components/servicePages/BusinessPage";
 import WebAppPage from "./components/servicePages/WebAppPage";
@@ -41,7 +41,7 @@ function App() {
                 </>
               }
             />
-            {/* ✅ Add dedicated service routes */}
+            {/*  Add dedicated service routes */}
             <Route path="/services/ecommerce" element={<EcommercePage />} />
             <Route path="/services/business" element={<BusinessPage />} />
             <Route path="/services/webapp" element={<WebAppPage />} />

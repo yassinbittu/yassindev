@@ -47,7 +47,7 @@
 
 .whatsapp-btn,
 .linkedin-btn {
-  background: #ffcc40;
+  background: #25d366;
   color: #0b0f19;
   font-size: 1rem;
   font-weight: 600;
@@ -143,21 +143,110 @@
 }
 
 /* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .section-title {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
   }
 
   .contact-intro {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 60px 20px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .contact-intro {
+    font-size: 0.95rem;
     margin-bottom: 30px;
   }
 
   .contact-buttons {
+    flex-direction: column;
     gap: 15px;
+  }
+
+  .whatsapp-btn,
+  .linkedin-btn {
+    width: 100%;
+    max-width: 280px;
   }
 
   .contact-form {
     padding: 30px 20px;
+  }
+}
+
+/* ===== MOBILE PHONES ===== */
+@media (max-width: 480px) {
+  .contact {
+    padding: 50px 15px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .contact-intro {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    padding: 0 5px;
+  }
+
+  .contact-buttons {
+    gap: 12px;
+  }
+
+  .whatsapp-btn,
+  .linkedin-btn {
+    font-size: 0.9rem;
+    padding: 12px 25px;
+  }
+
+  .contact-form {
+    padding: 25px 15px;
+    border-radius: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  .btn-submit {
+    width: 100%;
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+}
+
+/* ===== SMALL MOBILE (<=360px) ===== */
+@media (max-width: 360px) {
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .contact-intro {
+    font-size: 0.85rem;
+  }
+
+  .whatsapp-btn,
+  .linkedin-btn {
+    font-size: 0.85rem;
+    padding: 10px 20px;
+  }
+
+  .btn-submit {
+    font-size: 0.85rem;
+    padding: 10px 20px;
   }
 }

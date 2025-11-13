@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import heroImg from "../../assets/hero-image.png"; // replace with your own image
+import heroImg from "../../assets/hero-image.png"; 
 import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
 
 const Hero = () => {
