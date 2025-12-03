@@ -4,7 +4,7 @@ import "./Contact.css";
 const Contact = () => {
   const handleWhatsAppClick = () => {
     const phoneNumber = "918179456318"; 
-    const message = "Hey Yassin! Let’s build something awesome together ";
+    const message = "Hi Yassin, I would like to know more about your services. Can you assist me?";
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     window.open(whatsappUrl, "_blank");
