@@ -1,12 +1,12 @@
 /* ===== THEME COLORS ===== */
 :root {
-  --primary-bg: #0b0f19;         /* Main background */
-  --secondary-bg: #001f3f;       /* Navbar base */
+  --primary-bg: #0b0f19;         
+  --secondary-bg: #001f3f;       
   --gradient-bg: linear-gradient(90deg, #001f3f, #003366);
-  --accent-color: #f9b234;       /* Gold highlight */
-  --button-bg: #ffcc40;          /* Button background */
-  --text-color: #ffffff;         /* Primary text */
-  --subtext-color: #a0a0a0;      /* Secondary text */
+  --accent-color: #f9b234;       
+  --button-bg: #ffcc40;          
+  --text-color: #ffffff;         
+  --subtext-color: #a0a0a0;     
   --shadow-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -16,13 +16,13 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 85px; /* increased height */
+  height: 85px; 
   background: var(--primary-bg);
   color: var(--text-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 80px; /* more horizontal padding */
+  padding: 0 80px; 
   box-shadow: 0 5px 12px var(--shadow-color);
   z-index: 1000;
   box-sizing: border-box;
@@ -31,7 +31,7 @@
 
 /* ===== LOGO ===== */
 .navbar-logo {
-  font-size: 32px; /* bigger logo text */
+  font-size: 32px; 
   font-weight: 800;
   color: var(--accent-color);
   cursor: pointer;
@@ -59,7 +59,7 @@
 .navbar-links a {
   text-decoration: none;
   color: var(--text-color);
-  font-size: 20px; /* slightly larger font */
+  font-size: 20px; 
   font-weight: 500;
   position: relative;
   transition: color 0.3s ease, transform 0.2s ease;
@@ -89,11 +89,11 @@
 .hire-btn {
   color: var(--text-color);
   background: var(--button-bg);
-  padding: 12px 24px; /* larger button */
+  padding: 12px 24px; 
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 18px; /* larger text */
+  font-size: 18px; 
   transition: background 0.3s ease, transform 0.2s ease;
   box-shadow: 0 3px 8px var(--shadow-color);
 }
@@ -106,7 +106,7 @@
 /* ===== MENU ICON ===== */
 .menu-icon {
   display: none;
-  font-size: 30px; /* slightly larger */
+  font-size: 30px; 
   cursor: pointer;
   color: var(--text-color);
   transition: transform 0.3s ease;

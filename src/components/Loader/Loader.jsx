@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./Loader.css";
-import myLogo from "/mylogo-load.png"; // logo from public folder
+import myLogo from "/mylogo-load.png"; 
 
 const Loader = ({ onFinish }) => {
   const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
     // Start fade out a bit before unmount
-    const fadeTimer = setTimeout(() => setFadeOut(true), 2000); // fade after 1s
-    const finishTimer = setTimeout(() => onFinish(), 400);     // remove loader after fade
+    const fadeTimer = setTimeout(() => setFadeOut(true), 2000); 
+    const finishTimer = setTimeout(() => onFinish(), 400);     
 
     return () => {
       clearTimeout(fadeTimer);

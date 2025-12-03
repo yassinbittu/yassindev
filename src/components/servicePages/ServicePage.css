@@ -46,8 +46,8 @@
 }
 
 .category-card {
-  background-color: #1c1f2a; /* dark card background */
-  color: #ffffff;            /* white text */
+  background-color: #1c1f2a; 
+  color: #ffffff;           
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.3);
@@ -60,13 +60,13 @@
 .category-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 15px rgba(0,0,0,0.5);
-  background-color: #ffae00; /* highlight on hover */
-  color: #0b0f19;           /* text changes to dark */
+  background-color: #ffae00; 
+  color: #0b0f19;           
 }
 
 .category-icon {
   font-size: 40px;
-  color: blue; /* gold icon color */
+  color: blue; 
   margin-bottom: 10px;
 }
 

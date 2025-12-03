@@ -3,7 +3,11 @@ import "./Contact.css";
 
 const Contact = () => {
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/918179456318", "_blank"); // ✅ Your WhatsApp number
+    const phoneNumber = "918179456318"; 
+    const message = "Hi Yassin, I would like to know more about your services. Can you assist me?";
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    window.open(whatsappUrl, "_blank");
   };
 
   const handleLinkedInClick = () => {
@@ -12,7 +16,6 @@ const Contact = () => {
     const left = (window.innerWidth - width) / 2;
     const top = (window.innerHeight - height) / 2;
 
-    // ✅ Open LinkedIn in centered popup
     window.open(
       "https://www.linkedin.com/in/mohammed-yassin-77a056260/",
       "LinkedInProfile",
@@ -28,7 +31,7 @@ const Contact = () => {
         <span>yxn.dev1@gmail.com</span>
       </p>
 
-      {/* ✅ Contact Buttons */}
+      {/* Contact Buttons */}
       <div className="contact-buttons">
         <button className="whatsapp-btn" onClick={handleWhatsAppClick}>
           💬 WhatsApp Me
@@ -38,8 +41,14 @@ const Contact = () => {
         </button>
       </div>
 
-      {/* ✅ Contact Form */}
-      <form className="contact-form">
+      {/* Contact Form */}
+      <form
+        className="contact-form"
+        onSubmit={(e) => {
+          e.preventDefault();
+          alert("Message sent successfully! 🚀");
+        }}
+      >
         <div className="form-group">
           <input type="text" placeholder="Your Name" required />
         </div>
